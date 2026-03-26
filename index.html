@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dăunătorii  Livezii – Ghid pentru pomicultori</title>
+    <title>Dăunătorii Livezii – Ghid pentru pomicultori</title>
     <meta name="description" content="Identifică și combate dăunătorii livezii tale. Ghid complet pentru 12 specii de pomi fructiferi și 64 de dăunători și boli.">
-    <meta name="author" content="Dăunătorii  Livezii">
+    <meta name="author" content="Dăunătorii Livezii">
     <meta name="robots" content="index, follow">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -169,21 +169,6 @@
         }
 
         /* ── CTA ── */
-        .cta-section {
-            text-align: center;
-            padding: 36px 28px;
-        }
-
-        .cta-section h2 {
-            justify-content: center;
-            margin-bottom: 10px;
-        }
-
-        .cta-section p {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
         .cta-btn {
             display: inline-block;
             background: linear-gradient(135deg, #2d8a50, #1a6b5a);
@@ -198,6 +183,53 @@
         }
 
         .cta-btn:hover { opacity: 0.88; }
+
+        /* ── Links section ── */
+        .links-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        @media (max-width: 480px) {
+            .links-grid { grid-template-columns: 1fr; }
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: #f5faf6;
+            border-radius: 14px;
+            padding: 18px 20px;
+            border: 1px solid #e0ede3;
+            text-decoration: none;
+            color: #1a2e1f;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .link-card:hover {
+            box-shadow: 0 4px 16px rgba(45,138,80,0.15);
+            transform: translateY(-2px);
+        }
+
+        .link-card .link-icon {
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .link-card h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1d6b3e;
+            margin-bottom: 3px;
+        }
+
+        .link-card p {
+            font-size: 13px;
+            color: #5a6e5f;
+            margin: 0;
+        }
 
         /* ── Footer ── */
         footer {
@@ -215,7 +247,7 @@
 
 <header>
     <div class="icon">🌿</div>
-    <h1>Dăunătorii  Livezii</h1>
+    <h1>Dăunătorii Livezii</h1>
     <p class="tagline">Ghidul complet pentru identificarea și combaterea dăunătorilor din livada ta</p>
     <a href="#" class="app-store-btn">📱 Descarcă din App Store</a>
 </header>
@@ -309,18 +341,36 @@
         </div>
     </section>
 
-    <section cta-section>
-        <h2 style="justify-content:center;margin-bottom:10px;"><span class="emoji">📱</span> Disponibil pe iPhone</h2>
-        <p style="text-align:center;margin-bottom:20px;">Descarcă gratuit din App Store și protejează-ți livada.</p>
-        <div style="text-align:center;">
-            <a href="#" class="cta-btn">Descarcă acum</a>
+    <section>
+        <h2><span class="emoji">🔗</span> Informații utile</h2>
+        <div class="links-grid">
+            <a href="support.html" class="link-card">
+                <span class="link-icon">🛟</span>
+                <div>
+                    <h3>Support</h3>
+                    <p>Întrebări frecvente și ajutor pentru utilizarea aplicației</p>
+                </div>
+            </a>
+            <a href="privacy.html" class="link-card">
+                <span class="link-icon">🔒</span>
+                <div>
+                    <h3>Politica de confidențialitate</h3>
+                    <p>Cum gestionăm datele și confidențialitatea ta</p>
+                </div>
+            </a>
         </div>
+    </section>
+
+    <section style="text-align:center; padding: 36px 28px;">
+        <h2 style="justify-content:center; margin-bottom:10px;"><span class="emoji">📱</span> Disponibil pe iPhone</h2>
+        <p style="text-align:center; margin-bottom:20px;">Descarcă gratuit din App Store și protejează-ți livada.</p>
+        <a href="#" class="cta-btn">Descarcă acum</a>
     </section>
 
 </main>
 
 <footer>
-    <p>© 2025 Dăunătorii  Livezii &nbsp;·&nbsp; <a href="privacy.html">Politica de confidențialitate</a> &nbsp;·&nbsp; <a href="support.html">Support</a> &nbsp;·&nbsp; <a href="mailto:nicolaflorin00@icloud.com">Contact</a></p>
+    <p>© 2025 Dăunătorii Livezii &nbsp;·&nbsp; <a href="privacy.html">Politica de confidențialitate</a> &nbsp;·&nbsp; <a href="support.html">Support</a> &nbsp;·&nbsp; <a href="mailto:nicolaflorin00@icloud.com">Contact</a></p>
 </footer>
 
 </body>
