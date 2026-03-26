@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support – Dăunătorii Livezii</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #f0f5f1;
+            color: #1a2e1f;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2d8a50, #1a6b5a);
+            color: white;
+            padding: 48px 24px 40px;
+            text-align: center;
+        }
+
+        header .icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 22px;
+            background: rgba(255,255,255,0.15);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.85;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 20px 64px;
+        }
+
+        section {
+            background: white;
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        section h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d6b3e;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        section h2 .emoji { font-size: 22px; }
+
+        p { margin-bottom: 12px; color: #3a4a3f; }
+        p:last-child { margin-bottom: 0; }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eef3ef;
+            color: #3a4a3f;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        ul li:last-child { border-bottom: none; }
+
+        ul li .bullet {
+            color: #2d8a50;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .faq-item {
+            margin-bottom: 18px;
+        }
+
+        .faq-item:last-child { margin-bottom: 0; }
+
+        .faq-q {
+            font-weight: 600;
+            color: #1a2e1f;
+            margin-bottom: 6px;
+        }
+
+        .faq-a {
+            color: #4a5e4f;
+            margin-bottom: 0;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #2d8a50, #1a6b5a);
+            color: white;
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 8px;
+            transition: opacity 0.2s;
+        }
+
+        .contact-btn:hover { opacity: 0.88; }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: #8a9e8f;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="icon">🌿</div>
+    <h1>Dăunătorii Livezii</h1>
+    <p>Ghid de identificare și combatere a dăunătorilor</p>
+</header>
+
+<main>
+
+    <section>
+        <h2><span class="emoji">📖</span> Despre aplicație</h2>
+        <p>Dăunătorii Livezii este un ghid complet pentru identificarea și combaterea dăunătorilor și bolilor din livezi. Aplicația acoperă 12 specii de pomi fructiferi și 64 de dăunători și boli.</p>
+        <p>Nu este necesară crearea unui cont. Toate informațiile sunt disponibile offline, după prima instalare.</p>
+    </section>
+
+    <section>
+        <h2><span class="emoji">❓</span> Întrebări frecvente</h2>
+
+        <div class="faq-item">
+            <p class="faq-q">Cum descarc fotografiile?</p>
+            <p class="faq-a">Din ecranul principal, apasă butonul „Descarcă Foto". Aplicația va descărca automat imagini pentru fiecare dăunător din surse publice (Wikimedia, iNaturalist, GBIF). Ai nevoie de conexiune la internet pentru acest pas.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Câte fotografii se descarcă?</p>
+            <p class="faq-a">Aplicația încearcă să descarce până la 6 fotografii per dăunător (maximum 384 în total). Numărul real depinde de disponibilitatea imaginilor în bazele de date publice.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Pot folosi aplicația fără internet?</p>
+            <p class="faq-a">Da. Toate informațiile despre dăunători sunt disponibile offline. Internetul este necesar doar pentru descărcarea fotografiilor.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Cum șterg fotografiile descărcate?</p>
+            <p class="faq-a">Din ecranul principal, apasă butonul „Șterge Pozele". Toate imaginile salvate pe dispozitiv vor fi șterse.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Ce specii de pomi sunt acoperite?</p>
+            <p class="faq-a">Măr, Păr, Gutui, Prun, Cireș, Vișin, Cais, Piersic, Nuc, Alun, Smochin și arbuști fructiferi (coacăz, zmeur, mur).</p>
+        </div>
+    </section>
+
+    <section>
+        <h2><span class="emoji">🔧</span> Probleme cunoscute</h2>
+        <ul>
+            <li>
+                <span class="bullet">→</span>
+                <span>Unele fotografii pot să nu se descarce dacă imaginile nu sunt disponibile în bazele de date externe la momentul descărcării.</span>
+            </li>
+            <li>
+                <span class="bullet">→</span>
+                <span>Descărcarea fotografiilor necesită o conexiune stabilă la internet și poate dura câteva minute.</span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2><span class="emoji">✉️</span> Contact</h2>
+        <p>Ai o problemă, o sugestie sau ai găsit o eroare în date? Ne poți scrie oricând.</p>
+        <a href="mailto:support@Dăunătoriilivezii.ro" class="contact-btn">Trimite un email</a>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Dăunătorii Livezii · Toate drepturile rezervate</p>
+</footer>
+
+</body>
+</html>
