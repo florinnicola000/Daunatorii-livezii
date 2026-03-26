@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politica de Confidențialitate – Dăunătorii Livezii</title>
-    <meta name="description" content="Politica de Confidențialitate a aplicației Dăunătorii Livezii. Aplicația funcționează offline și nu colectează date personale.">
-    <meta name="author" content="Dăunătorii Livezii">
+    <title>Dăunătorii  Livezii – Ghid pentru pomicultori</title>
+    <meta name="description" content="Identifică și combate dăunătorii livezii tale. Ghid complet pentru 12 specii de pomi fructiferi și 64 de dăunători și boli.">
+    <meta name="author" content="Dăunătorii  Livezii">
     <meta name="robots" content="index, follow">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,43 +14,65 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             background: #f0f5f1;
             color: #1a2e1f;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
+        /* ── Hero ── */
         header {
             background: linear-gradient(135deg, #2d8a50, #1a6b5a);
             color: white;
-            padding: 48px 24px 40px;
+            padding: 64px 24px 56px;
             text-align: center;
         }
 
         header .icon {
-            width: 90px;
-            height: 90px;
-            border-radius: 22px;
+            width: 100px;
+            height: 100px;
+            border-radius: 24px;
             background: rgba(255,255,255,0.15);
-            margin: 0 auto 20px;
+            margin: 0 auto 24px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 48px;
+            font-size: 54px;
         }
 
         header h1 {
-            font-size: 28px;
+            font-size: 34px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        header .tagline {
+            font-size: 18px;
+            opacity: 0.88;
+            margin-bottom: 32px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .app-store-btn {
+            display: inline-block;
+            background: white;
+            color: #1d6b3e;
+            text-decoration: none;
+            padding: 14px 36px;
+            border-radius: 50px;
             font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        header p {
             font-size: 16px;
-            opacity: 0.85;
+            transition: opacity 0.2s;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
 
+        .app-store-btn:hover { opacity: 0.88; }
+
+        /* ── Main ── */
         main {
             max-width: 720px;
             margin: 0 auto;
-            padding: 32px 20px 64px;
+            padding: 40px 20px 64px;
         }
 
         section {
@@ -62,69 +84,122 @@
         }
 
         section h2 {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
             color: #1d6b3e;
-            margin-bottom: 14px;
+            margin-bottom: 18px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
 
-        section h2 .emoji { font-size: 22px; }
+        section h2 .emoji { font-size: 24px; }
 
         p { margin-bottom: 12px; color: #3a4a3f; }
         p:last-child { margin-bottom: 0; }
 
-        ul {
-            list-style: none;
-            padding: 0;
+        /* ── Feature grid ── */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        @media (max-width: 480px) {
+            .features { grid-template-columns: 1fr; }
+        }
+
+        .feature-card {
+            background: #f5faf6;
+            border-radius: 14px;
+            padding: 20px;
+            border: 1px solid #e0ede3;
+        }
+
+        .feature-card .icon { font-size: 28px; margin-bottom: 10px; }
+        .feature-card h3 { font-size: 15px; font-weight: 700; color: #1a2e1f; margin-bottom: 6px; }
+        .feature-card p { font-size: 14px; color: #5a6e5f; margin: 0; }
+
+        /* ── Tree list ── */
+        .tree-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tree-tag {
+            background: linear-gradient(135deg, #2d8a50, #1a6b5a);
+            color: white;
+            padding: 7px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* ── Stats ── */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        @media (max-width: 480px) {
+            .stats { grid-template-columns: 1fr 1fr; }
+        }
+
+        .stat {
+            text-align: center;
+            background: #f5faf6;
+            border-radius: 14px;
+            padding: 20px 10px;
+            border: 1px solid #e0ede3;
+        }
+
+        .stat .number {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1d6b3e;
+            display: block;
+        }
+
+        .stat .label {
+            font-size: 13px;
+            color: #5a6e5f;
             margin-top: 4px;
         }
 
-        ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #eef3ef;
-            color: #3a4a3f;
-            display: flex;
-            gap: 10px;
-            align-items: flex-start;
+        /* ── CTA ── */
+        .cta-section {
+            text-align: center;
+            padding: 36px 28px;
         }
 
-        ul li:last-child { border-bottom: none; }
-
-        ul li .bullet {
-            color: #2d8a50;
-            font-weight: 700;
-            flex-shrink: 0;
-            margin-top: 2px;
+        .cta-section h2 {
+            justify-content: center;
+            margin-bottom: 10px;
         }
 
-        strong { color: #1a2e1f; }
+        .cta-section p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-        .contact-btn {
+        .cta-btn {
             display: inline-block;
             background: linear-gradient(135deg, #2d8a50, #1a6b5a);
             color: white;
             text-decoration: none;
-            padding: 14px 32px;
-            border-radius: 14px;
-            font-weight: 600;
-            font-size: 16px;
-            margin-top: 8px;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 17px;
             transition: opacity 0.2s;
+            box-shadow: 0 4px 20px rgba(45,138,80,0.30);
         }
 
-        .contact-btn:hover { opacity: 0.88; }
+        .cta-btn:hover { opacity: 0.88; }
 
-        .update {
-            font-style: italic;
-            color: #8a9e8f;
-            font-size: 14px;
-            text-align: center;
-            padding: 8px 0 0;
-        }
-
+        /* ── Footer ── */
         footer {
             text-align: center;
             padding: 24px;
@@ -132,226 +207,121 @@
             font-size: 14px;
         }
 
-        a { color: #1d6b3e; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        footer a { color: #1d6b3e; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
 <header>
     <div class="icon">🌿</div>
-    <h1>Dăunătorii Livezii</h1>
-    <p>Politica de Confidențialitate</p>
+    <h1>Dăunătorii  Livezii</h1>
+    <p class="tagline">Ghidul complet pentru identificarea și combaterea dăunătorilor din livada ta</p>
+    <a href="#" class="app-store-btn">📱 Descarcă din App Store</a>
 </header>
 
 <main>
 
     <section>
-        <h2><span class="emoji">📋</span> Introducere</h2>
-        <p>Această Politică de Confidențialitate descrie modul în care aplicația mobilă <strong>Dăunătorii Livezii</strong> gestionează informațiile tale.</p>
-        <p>Aplicația este concepută pentru a funcționa <strong>offline</strong> și <strong>nu colectează, stochează sau solicită date personale identificabile (PII)</strong>.</p>
+        <div class="stats">
+            <div class="stat">
+                <span class="number">64</span>
+                <span class="label">Dăunători și boli</span>
+            </div>
+            <div class="stat">
+                <span class="number">12</span>
+                <span class="label">Specii de pomi</span>
+            </div>
+            <div class="stat">
+                <span class="number">384</span>
+                <span class="label">Fotografii</span>
+            </div>
+        </div>
     </section>
 
     <section>
-        <h2><span class="emoji">🔍</span> Informații colectate</h2>
-        <p>Nu solicităm nume, adrese de e-mail, numere de telefon, locație sau alte informații care ar putea identifica utilizatorii.</p>
-        <ul>
-            <li>
-                <span class="bullet">→</span>
-                <span><strong>Date de utilizare anonime:</strong> informații generale despre modul de utilizare (funcții accesate, tip dispozitiv, versiunea sistemului de operare). Complet anonime.</span>
-            </li>
-            <li>
-                <span class="bullet">→</span>
-                <span><strong>Jurnale de erori:</strong> pot conține informații tehnice anonime pentru diagnosticarea problemelor și îmbunătățirea aplicației.</span>
-            </li>
-        </ul>
+        <h2><span class="emoji">✨</span> Ce oferă aplicația</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="icon">🔍</div>
+                <h3>Identificare rapidă</h3>
+                <p>Caută după pom și partea atacată — fructe, frunze, flori, lăstari și altele.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📷</div>
+                <h3>Galerie foto</h3>
+                <p>Descarcă fotografii pentru fiecare dăunător și identifică vizual simptomele.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📖</div>
+                <h3>Informații complete</h3>
+                <p>Descriere, semne de recunoaștere, impact economic, sezonalitate și tratamente.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📶</div>
+                <h3>Funcționează offline</h3>
+                <p>Toate datele sunt disponibile fără internet, oricând ai nevoie la livadă.</p>
+            </div>
+        </div>
     </section>
 
     <section>
-        <h2><span class="emoji">⚙️</span> Cum utilizăm informațiile</h2>
-        <ul>
-            <li><span class="bullet">→</span><span>Îmbunătățirea funcționalității și stabilității aplicației</span></li>
-            <li><span class="bullet">→</span><span>Optimizarea experienței utilizatorului</span></li>
-            <li><span class="bullet">→</span><span>Corectarea erorilor și îmbunătățirea conținutului informativ</span></li>
-        </ul>
+        <h2><span class="emoji">🌳</span> Specii acoperite</h2>
+        <div class="tree-grid">
+            <span class="tree-tag">🍎 Măr</span>
+            <span class="tree-tag">🍐 Păr</span>
+            <span class="tree-tag">🍈 Gutui</span>
+            <span class="tree-tag">🫐 Prun</span>
+            <span class="tree-tag">🍒 Cireș</span>
+            <span class="tree-tag">🍒 Vișin</span>
+            <span class="tree-tag">🍑 Cais</span>
+            <span class="tree-tag">🍑 Piersic</span>
+            <span class="tree-tag">🌰 Nuc</span>
+            <span class="tree-tag">🌰 Alun</span>
+            <span class="tree-tag">🍃 Smochin</span>
+            <span class="tree-tag">🫐 Arbuști fructiferi</span>
+        </div>
     </section>
 
     <section>
-        <h2><span class="emoji">🤝</span> Partajarea informațiilor</h2>
-        <p>Deoarece aplicația nu colectează date personale, nu există informații personale care să fie partajate cu terți.</p>
+        <h2><span class="emoji">🐛</span> Categorii de dăunători</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="icon">🦟</div>
+                <h3>Insecte</h3>
+                <p>Viermi, afide, molii, gândaci și alte insecte dăunătoare.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🕷️</div>
+                <h3>Acarieni</h3>
+                <p>Păianjeni roșii și alte specii de acarieni fitofagi.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🍄</div>
+                <h3>Boli fungice</h3>
+                <p>Rapăn, făinare, monilioză și alte boli cauzate de ciuperci.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🧫</div>
+                <h3>Boli bacteriene</h3>
+                <p>Focul bacterian și alte infecții bacteriene ale pomilor.</p>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2><span class="emoji">🔒</span> Securitatea datelor</h2>
-        <p>Implementăm măsuri tehnice rezonabile pentru a proteja datele non-personale împotriva accesului neautorizat, pierderii sau modificării.</p>
-    </section>
-
-    <section>
-        <h2><span class="emoji">🔗</span> Link-uri externe</h2>
-        <p>Aplicația poate conține link-uri către resurse externe (articole științifice, baze de date, imagini). Nu suntem responsabili pentru conținutul sau politicile de confidențialitate ale site-urilor terțe.</p>
-    </section>
-
-    <section>
-        <h2><span class="emoji">👶</span> Politica privind minorii</h2>
-        <p>Aplicația este destinată publicului larg și nu colectează cu bună știință informații personale de la copii sub 13 ani.</p>
-    </section>
-
-    <section>
-        <h2><span class="emoji">📝</span> Modificări ale politicii</h2>
-        <p>Putem actualiza periodic această politică. Orice modificare va fi publicată pe această pagină și, dacă este necesar, notificată în aplicație.</p>
-        <p class="update">Ultima actualizare: februarie 2026</p>
-    </section>
-
-    <section>
-        <h2><span class="emoji">✉️</span> Contact</h2>
-        <p>Pentru întrebări sau sugestii legate de această politică sau de aplicație, ne poți contacta oricând.</p>
-        <a href="mailto:nicolaflorin00@icloud.com" class="contact-btn">Trimite un email</a>
+    <section cta-section>
+        <h2 style="justify-content:center;margin-bottom:10px;"><span class="emoji">📱</span> Disponibil pe iPhone</h2>
+        <p style="text-align:center;margin-bottom:20px;">Descarcă gratuit din App Store și protejează-ți livada.</p>
+        <div style="text-align:center;">
+            <a href="#" class="cta-btn">Descarcă acum</a>
+        </div>
     </section>
 
 </main>
 
 <footer>
-    <p>© 2025 Dăunătorii Livezii · Toate drepturile rezervate</p>
+    <p>© 2025 Dăunătorii  Livezii &nbsp;·&nbsp; <a href="privacy.html">Politica de confidențialitate</a> &nbsp;·&nbsp; <a href="support.html">Support</a> &nbsp;·&nbsp; <a href="mailto:nicolaflorin00@icloud.com">Contact</a></p>
 </footer>
-
-</body>
-</html>
-            margin-top: 0;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9rem;
-            color: #555;
-        }
-
-        a {
-            color: #2e7d32;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .update {
-            font-style: italic;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-
-<main>
-    <h1>Politica de Confidențialitate pentru Aplicația Dăunătorii livezii</h1>
-
-    <p>
-        Această Politică de Confidențialitate descrie modul în care aplicația mobilă
-        <strong>Dăunătorii livezii</strong> („Aplicația”) gestionează informațiile tale.
-    </p>
-
-    <h2>1. Informații pe care le colectăm</h2>
-
-    <p>
-        Aplicația <strong>Dăunătorii livezii</strong> este o aplicație informativă
-        destinată identificării și recunoașterii dăunătorilor care afectează livezile
-        și culturile pomicole.
-        <strong>Aplicația este concepută pentru a funcționa offline și nu colectează,
-        stochează sau solicită date personale identificabile (PII).</strong>
-    </p>
-
-    <p>
-        Nu solicităm nume, adrese de e-mail, numere de telefon, locație precisă
-        sau alte informații care ar putea identifica utilizatorii.
-    </p>
-
-    <ul>
-        <li>
-            <strong>Date de utilizare anonime și agregate:</strong>
-            informații generale despre modul de utilizare a aplicației
-            (funcții accesate, frecvență, tip general de dispozitiv,
-            versiunea sistemului de operare). Aceste date sunt complet anonime.
-        </li>
-        <li>
-            <strong>Jurnale de erori și rapoarte de avarie:</strong>
-            pot conține informații tehnice anonime necesare pentru
-            diagnosticarea problemelor și îmbunătățirea aplicației.
-        </li>
-    </ul>
-
-    <h2>2. Cum utilizăm informațiile colectate</h2>
-
-    <ul>
-        <li>Îmbunătățirea funcționalității și stabilității aplicației</li>
-        <li>Optimizarea experienței utilizatorului</li>
-        <li>Corectarea erorilor și îmbunătățirea conținutului informativ</li>
-    </ul>
-
-    <h2>3. Partajarea informațiilor</h2>
-
-    <p>
-        Deoarece aplicația <strong>Dăunătorii livezii</strong> nu colectează date personale,
-        nu există informații personale care să fie partajate cu terți.
-    </p>
-
-    <h2>4. Securitatea datelor</h2>
-
-    <p>
-        Implementăm măsuri tehnice rezonabile pentru a proteja
-        datele non-personale împotriva accesului neautorizat,
-        pierderii sau modificării.
-    </p>
-
-    <h2>5. Link-uri către alte site-uri</h2>
-
-    <p>
-        Aplicația poate conține link-uri către resurse externe
-        (ex. articole științifice, baze de date sau imagini).
-        Nu suntem responsabili pentru conținutul sau politicile
-        de confidențialitate ale site-urilor terțe.
-    </p>
-
-    <h2>6. Politica privind minorii</h2>
-
-    <p>
-        Aplicația este destinată publicului larg și nu colectează
-        cu bună știință informații personale de la copii sub 13 ani.
-    </p>
-
-    <h2>7. Modificări ale acestei Politici de Confidențialitate</h2>
-
-    <p>
-        Putem actualiza periodic această politică.
-        Orice modificare va fi publicată pe această pagină
-        și, dacă este necesar, notificată în aplicație.
-    </p>
-
-    <h2>8. Contact</h2>
-
-    <p>
-        Pentru întrebări sau sugestii legate de această politică
-        sau de aplicația <strong>Dăunătorii livezii</strong>,
-        ne poți contacta la:
-    </p>
-
- <p>
-    📧 <a href="mailto:nicolaflorin00@icloud.com">nicolaflorin00@icloud.com</a><br>
-</p>
-
-    <footer>
-        <p class="update">Ultima actualizare: februarie 2026 </p>
-    </footer>
-</main>
 
 </body>
 </html>
